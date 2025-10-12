@@ -7,7 +7,7 @@ layout: default
 title: Pseudocode problems
 ---
 
-# Parsons Practice
+# Cinema Tickets
 
 The code blocks below are for a program that calculates the price of a cinema ticket.  
 The program should ask for an age and the day of the week.
@@ -42,7 +42,7 @@ The program should ask for an age and the day of the week.
   }
 </style>
 
-## Parsons 1 (Line Based Grader)
+## Sort the code below so that it is in the correct order
 <div id="Cinema-sortableTrash" class="sortable-code"></div> 
 <div id="Cinema-sortable" class="sortable-code"></div> 
 <div style="clear:both;"></div> 
