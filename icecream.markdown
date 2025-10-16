@@ -3,7 +3,10 @@ layout: default
 title: Ice Cream Prices
 ---
 
-**[🏠 Home](./)** | **[🍿 Cinema Puzzle](./cinema)** | **[🔐 Password Puzzle](./password)** | **[🐞 Debugging Puzzle](./debug)**  
+**[➡ Cinema Puzzle](./cinema)**  
+**[🍦 Ice Cream Puzzle](./icecream)**  
+**[🔐 Password Puzzle](./password)**  
+**[🐞 Debugging Puzzle](./debug)**  
 
 ---
 
