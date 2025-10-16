@@ -48,9 +48,16 @@ The code blocks below represent a program that calculates the price of an ice cr
     can_indent: true,
     show_feedback: true
   });
-  puzzle.init(initial);
-  puzzle.shuffleLines();
-  $("#IceCream-feedbackLink").click(()=>puzzle.getFeedback());
-  $("#IceCream-newInstanceLink").click(()=>puzzle.shuffleLines());
+  parsonsPuzzle.init(initial);
+  parsonsPuzzle.shuffleLines();
+  $("#IceCream-newInstanceLink").click(function(event){ 
+      event.preventDefault(); 
+      parsonsPuzzle.getFeedback(); 
+  $("#IceCream-feedbackLink").click(function(event){ 
+      event.preventDefault(); 
+      parsonsPuzzle.shuffleLines(); 
+  }); 
+
 })();
 </script>
+
