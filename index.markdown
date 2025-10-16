@@ -5,8 +5,7 @@ title: Pseudocode Problems
 
 # Parsons Practice
 
-**[➡ Cinema Puzzle](./cinema)**  
-**[🍦 Ice Cream Puzzle](./icecream)**  
+**[🍦 Ice Cream Puzzle](./icecream.html)**  
 **[🔐 Password Puzzle](./password)**  
 **[🐞 Debugging Puzzle](./debug)**  
 
