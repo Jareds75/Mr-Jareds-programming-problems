@@ -1,11 +1,16 @@
 ---
-# Feel free to add content and custom Front Matter to this file.
-# To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
-
+layout: default
+title: Pseudocode Problems
 ---
 
----
+# Parsons Practice
 
+**[➡ Cinema Puzzle](./cinema)**  
+**[🍦 Ice Cream Puzzle](./icecream)**  
+**[🔐 Password Puzzle](./password)**  
+**[🐞 Debugging Puzzle](./debug)**  
+
+---
 # Cinema Tickets
 
 The code blocks below are for a program that calculates the price of a cinema ticket.  
