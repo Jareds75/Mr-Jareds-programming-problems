@@ -54,6 +54,7 @@ The code blocks below represent a program that calculates the price of an ice cr
   $("#IceCream-newInstanceLink").click(function(event){ 
       event.preventDefault(); 
       parsonsPuzzle.getFeedback(); 
+  }); 
   $("#IceCream-feedbackLink").click(function(event){ 
       event.preventDefault(); 
       parsonsPuzzle.shuffleLines(); 
