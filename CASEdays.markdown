@@ -1,9 +1,31 @@
-<div id="sortableTrash" class="sortable-code"></div> 
-<div id="sortable" class="sortable-code"></div> 
+---
+layout: default
+title: Days chooser
+---
+
+**[🍦 Cinema Ticket Puzzle](./index.html)** 
+**[📅 Days chooser](./CASEdays)**  
+**[🍦 Ice Cream Puzzle](./icecream.html)**  
+**[🔐 Password Puzzle](./password)**  
+**[🐞 Debugging Puzzle](./debug)**  
+
+---
+
+# Days choosers
+
+The code blocks below represent a program that lets users choose the day of the week
+
+**Rules:**
+- Users choose a day number
+- The program outputs the day of the week
+- If the number is not a day of the week, it outputs Error
+
+<div id="CASE of days-sortableTrash" class="sortable-code"></div> 
+<div id="CASE of days-sortable" class="sortable-code"></div> 
 <div style="clear:both;"></div> 
 <p> 
-    <input id="feedbackLink" value="Get Feedback" type="button" /> 
-    <input id="newInstanceLink" value="Reset Problem" type="button" /> 
+    <input id="CASE of days-feedbackLink" value="Get Feedback" type="button" /> 
+    <input id="CASE of days-newInstanceLink" value="Reset Problem" type="button" /> 
 </p> 
 <script type="text/javascript"> 
 (function(){
@@ -22,7 +44,7 @@
     "    OTHERWISE OUTPUT &quot;Error: Invalid day number entered.&quot;\n" +
     "ENDCASE";
   var parsonsPuzzle = new ParsonsWidget({
-    "sortableId": "sortable",
+    "sortableId": "CASE of days-sortable",
     "max_wrong_lines": 10,
     "grader": ParsonsWidget._graders.LineBasedGrader,
     "exec_limit": 2500,
@@ -33,11 +55,11 @@
   });
   parsonsPuzzle.init(initial);
   parsonsPuzzle.shuffleLines();
-  $("#newInstanceLink").click(function(event){ 
+  $("#CASE of days-newInstanceLink").click(function(event){ 
       event.preventDefault(); 
       parsonsPuzzle.shuffleLines(); 
   }); 
-  $("#feedbackLink").click(function(event){ 
+  $("#CASE of days-feedbackLink").click(function(event){ 
       event.preventDefault(); 
       parsonsPuzzle.getFeedback(); 
   }); 
