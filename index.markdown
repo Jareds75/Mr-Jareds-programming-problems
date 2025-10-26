@@ -6,6 +6,7 @@ title: Pseudocode Problems
 # Parsons Practice
 
 **[🍦 Cinema Ticket Puzzle](./index.html)** 
+**[📅 Days chooser](./CASEdays)**  
 **[🍦 Ice Cream Puzzle](./icecream.html)**  
 **[🔐 Password Puzzle](./password)**  
 **[🐞 Debugging Puzzle](./debug)**  
