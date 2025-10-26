@@ -3,30 +3,31 @@ layout: default
 title: Days chooser
 ---
 
-**[🍦 Cinema Ticket Puzzle](./index.html)** 
-**[📅 Days chooser](./CASEdays)**  
+**[🍿 Cinema Ticket Puzzle](./index.html)**  
+**[📅 Days chooser](./CASEdays.html)**  
 **[🍦 Ice Cream Puzzle](./icecream.html)**  
-**[🔐 Password Puzzle](./password)**  
-**[🐞 Debugging Puzzle](./debug)**  
+**[🔐 Password Puzzle](./password.html)**  
+**[🐞 Debugging Puzzle](./debug.html)**  
 
 ---
 
-# Days choosers
+# Days chooser
 
-The code blocks below represent a program that lets users choose the day of the week
+The code blocks below represent a program that lets users choose the day of the week.
 
 **Rules:**
-- Users choose a day number
-- The program outputs the day of the week
-- If the number is not a day of the week, it outputs Error
+- Users choose a day number  
+- The program outputs the day of the week  
+- If the number is not a day of the week, it outputs “Error”
 
-<div id="CASE of days-sortableTrash" class="sortable-code"></div> 
-<div id="CASE of days-sortable" class="sortable-code"></div> 
+<div id="CASEdays-sortableTrash" class="sortable-code"></div> 
+<div id="CASEdays-sortable" class="sortable-code"></div> 
 <div style="clear:both;"></div> 
 <p> 
-    <input id="CASE of days-feedbackLink" value="Get Feedback" type="button" /> 
-    <input id="CASE of days-newInstanceLink" value="Reset Problem" type="button" /> 
+    <input id="CASEdays-feedbackLink" value="Get Feedback" type="button" /> 
+    <input id="CASEdays-newInstanceLink" value="Reset Problem" type="button" /> 
 </p> 
+
 <script type="text/javascript"> 
 (function(){
   var initial = "OUTPUT &quot;Please enter a day number (1-7): &quot;\n" +
@@ -43,8 +44,9 @@ The code blocks below represent a program that lets users choose the day of the 
     "    // The OTHERWISE clause catches any value not listed above\n" +
     "    OTHERWISE OUTPUT &quot;Error: Invalid day number entered.&quot;\n" +
     "ENDCASE";
+
   var parsonsPuzzle = new ParsonsWidget({
-    "sortableId": "CASE of days-sortable",
+    "sortableId": "CASEdays-sortable",
     "max_wrong_lines": 10,
     "grader": ParsonsWidget._graders.LineBasedGrader,
     "exec_limit": 2500,
@@ -53,15 +55,18 @@ The code blocks below represent a program that lets users choose the day of the 
     "lang": "en",
     "show_feedback": true
   });
+
   parsonsPuzzle.init(initial);
   parsonsPuzzle.shuffleLines();
-  $("#CASE of days-newInstanceLink").click(function(event){ 
+
+  $("#CASEdays-newInstanceLink").click(function(event){ 
       event.preventDefault(); 
       parsonsPuzzle.shuffleLines(); 
   }); 
-  $("#CASE of days-feedbackLink").click(function(event){ 
+  $("#CASEdays-feedbackLink").click(function(event){ 
       event.preventDefault(); 
       parsonsPuzzle.getFeedback(); 
   }); 
 })(); 
 </script>
+
