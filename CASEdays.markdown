@@ -20,6 +20,30 @@ The code blocks below represent a program that lets users choose the day of the 
 - The program outputs the day of the week  
 - If the number is not a day of the week, it outputs “Error”
 
+<style>
+  /* Make code blocks wider and easier to read */
+  .sortable-code {
+    width: 95%;            /* Use nearly the full page width */
+    min-height: 240px;     /* Slightly taller area */
+    font-family: monospace;
+    font-size: 0.95rem;    /* Slightly larger text */
+    line-height: 1.3;
+    white-space: pre-wrap; /* Allow long lines to wrap if needed */
+    overflow-x: auto;      /* Add horizontal scroll if still too wide */
+    margin: 0.4em auto 1em auto; /* Center and reduce top/bottom gaps */
+  }
+
+  /* Make buttons look consistent */
+  input[type="button"] {
+    min-width: 140px;
+    padding: 8px 12px;
+    font-size: 1rem;
+    margin-right: 10px;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+</style>
+
 <div id="CASEdays-sortableTrash" class="sortable-code"></div> 
 <div id="CASEdays-sortable" class="sortable-code"></div> 
 <div style="clear:both;"></div> 
@@ -69,4 +93,3 @@ The code blocks below represent a program that lets users choose the day of the 
   }); 
 })(); 
 </script>
-
