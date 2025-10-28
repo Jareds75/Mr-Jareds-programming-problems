@@ -68,8 +68,8 @@ The code blocks below represent a program that totals numbers until a user decid
 (function(){
   var initial = "Total ← 0\n" +
     "Number ← 0\n" +
-    "OUTPUT &quot;Enter the first number to add together.&quot;\n" +
-    "OUTPUT &quot;Enter -1 to stop and see the total. Now enter the first num: &quot;\n" +
+    "OUTPUT &quot;This program totals the numbers you enter.&quot;\n" +
+    "OUTPUT &quot;"Enter first number (-1 to stop): " &quot;\n" +
     "Number ← INPUT\n" +
     "// loops until a user enters -1\n" +
     "WHILE Number != -1 DO\n" +
