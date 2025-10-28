@@ -18,21 +18,32 @@ title: Days chooser
 The code blocks below represent a program that totals numbers until a user decides to stop
 
 **Rules:**
-- Users choose a day number  
-- The program outputs the day of the week  
-- If the number is not a day of the week, it outputs “Error”
+- The program asks the user to enter numbers repeatedly.
+- Each number entered is added to a running Total.
+- When the user enters -1, the loop stops and the final Total is displayed.
 
 <style>
-  /* Make code blocks wider and easier to read */
+  /* Make code blocks full-width */
   .sortable-code {
-    width: 95%;            /* Use nearly the full page width */
-    min-height: 240px;     /* Slightly taller area */
+    display: block !important;     /* Force block layout */
+    width: 95% !important;         /* Nearly full page width */
+    max-width: none !important;    /* Remove any internal max-width */
+    min-height: 240px;
     font-family: monospace;
-    font-size: 0.95rem;    /* Slightly larger text */
+    font-size: 0.95rem;
     line-height: 1.3;
-    white-space: pre-wrap; /* Allow long lines to wrap if needed */
-    overflow-x: auto;      /* Add horizontal scroll if still too wide */
-    margin: 0.4em auto 1em auto; /* Center and reduce top/bottom gaps */
+    white-space: pre-wrap;
+    overflow-x: auto;
+    margin: 0.6em auto 1em auto;
+    text-align: left;
+  }
+
+  /* Fix the internal parsons container */
+  .sortable {
+    display: block !important;
+    width: 100% !important;
+    max-width: none !important;
+    text-align: left !important;
   }
 
   /* Make buttons look consistent */
