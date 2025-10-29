@@ -69,7 +69,7 @@ The code blocks below represent a program that totals numbers until a user decid
   var initial = "Total ← 0\n" +
     "Number ← 0\n" +
     "OUTPUT &quot;This program totals the numbers you enter.&quot;\n" +
-    "OUTPUT &quot;"Enter first number (-1 to stop): " &quot;\n" +
+    "OUTPUT &quot;Enter first number (-1 to stop): " &quot;\n" +
     "Number ← INPUT\n" +
     "// loops until a user enters -1\n" +
     "WHILE Number != -1 DO\n" +
