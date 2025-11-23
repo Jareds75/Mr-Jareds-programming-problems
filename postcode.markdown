@@ -13,17 +13,17 @@ This puzzle uses a **WHILE** loop to force the user to enter a non-empty postcod
 - The loop exits when a non-blank postcode is entered.
 
 <style>
-  /* Make code blocks wider and easier to read and ensure they are LEFT-aligned */
+  /* Ensure code blocks are maximum width and strictly left-aligned */
   .sortable-code {
-    /* Increased width for wider display */
-    width: 98%; 
+    /* Set to 100% for maximum available width */
+    width: 100%; 
     min-height: 240px;
     font-family: monospace;
     font-size: 0.95rem;
     line-height: 1.3;
     white-space: pre-wrap;
     overflow-x: auto;
-    /* Set left/right margins to 0 to remove centering and push content left */
+    /* Explicitly set left/right margins to 0 to prevent centering */
     margin: 0.4em 0 1em 0; 
   }
 
@@ -42,7 +42,7 @@ This puzzle uses a **WHILE** loop to force the user to enter a non-empty postcod
 <div id="sortable" class="sortable-code"></div>
 <div style="clear:both;"></div>
 
-<!-- Removed inline text-align: center to default to left alignment -->
+<!-- Buttons default to left-align, ensuring they are not centered -->
 <p>
     <input id="feedbackLink" value="Get Feedback" type="button" />
     <input id="newInstanceLink" value="Reset Problem" type="button" />
