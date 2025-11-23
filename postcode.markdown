@@ -3,9 +3,10 @@ layout: default
 title: Postcode Validation Loop
 ---
 
-<h1>Postcode Validation</h1>
+# Postcode Validation
 
-This puzzle uses a **WHILE** loop to force the user to enter a non-empty postcode. The loop should only exit once a valid, non-blank input is received.
+This puzzle uses a **WHILE** loop to force the user to enter a non-empty postcode.  
+The loop should only exit once a valid, non-blank input is received.
 
 **Rules:**
 - The program asks for input once before the loop to get the **initial attempt**.
@@ -13,21 +14,20 @@ This puzzle uses a **WHILE** loop to force the user to enter a non-empty postcod
 - The loop exits when a non-blank postcode is entered.
 
 <style>
-  /* Ensure code blocks are maximum width and strictly left-aligned */
-  .sortable-code {
-    /* Set to 100% for maximum available width */
-    width: 100%; 
-    min-height: 240px;
-    font-family: monospace;
-    font-size: 0.95rem;
-    line-height: 1.3;
-    white-space: pre-wrap;
-    overflow-x: auto;
-    /* Explicitly set left/right margins to 0 to prevent centering */
-    margin: 0.4em 0 1em 0; 
+  /* Reduce extra space after paragraphs and lists */
+  p, ul {
+    margin-bottom: 0.5em;
   }
 
-  /* Make buttons look consistent */
+  /* Make code boxes wider and reduce top gap — consistent with Cinema version */
+  .sortable-code {
+    width: 95%;
+    min-height: 220px;
+    margin-top: 0.4em;
+    margin-bottom: 10px;
+  }
+
+  /* Make buttons larger and neater — matching Cinema version */
   input[type="button"] {
     min-width: 140px;
     padding: 8px 12px;
@@ -38,23 +38,21 @@ This puzzle uses a **WHILE** loop to force the user to enter a non-empty postcod
   }
 </style>
 
-<div id="sortableTrash" class="sortable-code"></div>
-<div id="sortable" class="sortable-code"></div>
-<div style="clear:both;"></div>
+## Sort the code below so that it is in the correct order
+<div id="Postcode-sortableTrash" class="sortable-code"></div> 
+<div id="Postcode-sortable" class="sortable-code"></div> 
+<div style="clear:both;"></div> 
+<p> 
+    <input id="Postcode-feedbackLink" value="Get Feedback" type="button" /> 
+    <input id="Postcode-newInstanceLink" value="Reset Problem" type="button" /> 
+</p> 
 
-<!-- Buttons default to left-align, ensuring they are not centered -->
-<p>
-    <input id="feedbackLink" value="Get Feedback" type="button" />
-    <input id="newInstanceLink" value="Reset Problem" type="button" />
-</p>
-
-<script type="text/javascript">
+<script type="text/javascript"> 
 (function(){
-  // The CORRECT and CLEANER pseudocode for validation:
-  var initial = "postcode ← \"\"\n" +
+  var initial = 
+    "postcode ← \"\"\n" +
     "OUTPUT \"Please enter your postcode: \"\n" +
     "postcode ← INPUT\n" +
-    "// Loop continues WHILE the postcode is blank\n" +
     "WHILE postcode = \"\" DO\n" +
     "    OUTPUT \"Error: Postcode is required.\"\n" +
     "    OUTPUT \"Please enter your postcode again: \"\n" +
@@ -63,7 +61,7 @@ This puzzle uses a **WHILE** loop to force the user to enter a non-empty postcod
     "OUTPUT \"Postcode accepted: \", postcode";
 
   var parsonsPuzzle = new ParsonsWidget({
-    "sortableId": "sortable",
+    "sortableId": "Postcode-sortable",
     "max_wrong_lines": 10,
     "grader": ParsonsWidget._graders.LineBasedGrader,
     "exec_limit": 2500,
@@ -72,18 +70,18 @@ This puzzle uses a **WHILE** loop to force the user to enter a non-empty postcod
     "lang": "en",
     "show_feedback": true
   });
-  
+
   parsonsPuzzle.init(initial);
   parsonsPuzzle.shuffleLines();
 
-  $("#newInstanceLink").click(function(event){
-      event.preventDefault();
-      parsonsPuzzle.shuffleLines();
-  });
-  
-  $("#feedbackLink").click(function(event){
-      event.preventDefault();
-      parsonsPuzzle.getFeedback();
-  });
-})();
+  $("#Postcode-newInstanceLink").click(function(event){ 
+      event.preventDefault(); 
+      parsonsPuzzle.shuffleLines(); 
+  }); 
+
+  $("#Postcode-feedbackLink").click(function(event){ 
+      event.preventDefault(); 
+      parsonsPuzzle.getFeedback(); 
+  }); 
+})(); 
 </script>
