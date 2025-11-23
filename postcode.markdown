@@ -3,7 +3,7 @@ layout: default
 title: Postcode Validation Loop
 ---
 
-# Postcode Validation
+<h1>Postcode Validation</h1>
 
 This puzzle uses a **WHILE** loop to force the user to enter a non-empty postcode. The loop should only exit once a valid, non-blank input is received.
 
@@ -13,16 +13,18 @@ This puzzle uses a **WHILE** loop to force the user to enter a non-empty postcod
 - When a non-blank postcode is entered, the loop stops.
 
 <style>
-  /* Make code blocks wider and easier to read */
+  /* Make code blocks wider and easier to read and ensure they are LEFT-aligned */
   .sortable-code {
-    width: 95%;
+    /* Increased width for wider display */
+    width: 98%; 
     min-height: 240px;
     font-family: monospace;
     font-size: 0.95rem;
     line-height: 1.3;
     white-space: pre-wrap;
     overflow-x: auto;
-    margin: 0.4em auto 1em auto;
+    /* Set left/right margins to 0 to remove centering and push content left */
+    margin: 0.4em 0 1em 0; 
   }
 
   /* Make buttons look consistent */
@@ -39,6 +41,8 @@ This puzzle uses a **WHILE** loop to force the user to enter a non-empty postcod
 <div id="sortableTrash" class="sortable-code"></div>
 <div id="sortable" class="sortable-code"></div>
 <div style="clear:both;"></div>
+
+<!-- Removed inline text-align: center to default to left alignment -->
 <p>
     <input id="feedbackLink" value="Get Feedback" type="button" />
     <input id="newInstanceLink" value="Reset Problem" type="button" />
