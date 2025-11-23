@@ -8,9 +8,9 @@ title: Postcode Validation Loop
 This puzzle uses a **WHILE** loop to force the user to enter a non-empty postcode. The loop should only exit once a valid, non-blank input is received.
 
 **Rules:**
-- The program repeatedly asks the user for their postcode.
-- The loop continues as long as the `postcode` variable is blank (empty).
-- When a non-blank postcode is entered, the loop stops.
+- The program asks for input once before the loop to get the **initial attempt**.
+- The loop repeats **only** if the input is blank, first displaying an **error message**.
+- The loop exits when a non-blank postcode is entered.
 
 <style>
   /* Make code blocks wider and easier to read and ensure they are LEFT-aligned */
@@ -50,12 +50,14 @@ This puzzle uses a **WHILE** loop to force the user to enter a non-empty postcod
 
 <script type="text/javascript">
 (function(){
-  // The correct pseudocode logic for validation:
+  // The CORRECT and CLEANER pseudocode for validation:
   var initial = "postcode ← \"\"\n" +
+    "OUTPUT \"Please enter your postcode: \"\n" +
+    "postcode ← INPUT\n" +
     "// Loop continues WHILE the postcode is blank\n" +
     "WHILE postcode = \"\" DO\n" +
-    "    OUTPUT \"Postcode is required.\"\n" +
-    "    OUTPUT \"Please enter your postcode: \"\n" +
+    "    OUTPUT \"Error: Postcode is required.\"\n" +
+    "    OUTPUT \"Please enter your postcode again: \"\n" +
     "    postcode ← INPUT\n" +
     "ENDWHILE\n" +
     "OUTPUT \"Postcode accepted: \", postcode";
