@@ -10,6 +10,7 @@ title: Pseudocode Problems
 **[🍦 Ice Cream Puzzle](./icecream.html)**  
 **[🔐 Password Puzzle](./password)**  
 **[🐞 Debugging Puzzle](./debug)**  
+**[🐞 Fruits array](./fruits)**  
 
 ---
 # Cinema Tickets
