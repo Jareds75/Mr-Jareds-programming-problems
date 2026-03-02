@@ -45,9 +45,9 @@ This puzzle focuses on **iterating** through a 1D array and using **selection** 
 (function(){
   var initial =
     "fruits = ['apple', 'cherry', 'banana', 'coconut', 'peach']\n" +
-    "for f in fruits:\n" +
-    "    if 'c' in f:\n" +
-    "        print(f)";
+    "for i in range(len(fruits)):\n" +
+    "    if 'c' in fruits[i]:\n" +
+    "        print(fruits[i])";
 
   var parsonsPuzzle = new ParsonsWidget({
     "sortableId": "FruitSearch-sortable",
