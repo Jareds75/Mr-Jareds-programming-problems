@@ -39,8 +39,6 @@ This puzzle uses a **for loop** to check the length of each string stored in a 1
     <input id="City-newInstanceLink" value="Reset Problem" type="button" /> 
 </p> 
 
-
-
 <script type="text/javascript"> 
 (function(){
   var initial =
